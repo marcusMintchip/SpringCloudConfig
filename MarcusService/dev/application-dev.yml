@@ -17,5 +17,6 @@ management:
             server:
               requests: true
   context-path: /actuator
+
 info:
   foo: benny
