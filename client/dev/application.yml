@@ -15,3 +15,6 @@ management:
             server:
               requests: true
   context-path: /actuator
+
+app:
+  user: marcus
