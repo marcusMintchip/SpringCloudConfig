@@ -1,3 +1,5 @@
+# SpringCloudConfig
+
 这是一个配置服务器的git仓库，在这里存放的是spring cloud的各个服务的配置文件，结构目录如下
 
 ```
@@ -28,4 +30,4 @@ $ git commit -m "Add application.properties"
 $ curl http://{application}:{port}/actuator/refresh
 ```
 
-就可以在不重启服务的情况下刷新配置项# SpringCloudConfig
+就可以在不重启服务的情况下刷新配置项

@@ -1,7 +1,5 @@
-
 server:
-  port: 8762
-
+  port: 8010
 management:
   endpoint:
     health:
@@ -17,6 +15,3 @@ management:
             server:
               requests: true
   context-path: /actuator
-
-info:
-  foo: benny

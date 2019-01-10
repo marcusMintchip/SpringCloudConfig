@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: discovery
+  profiles:
+    active: dev
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+server:
+  port: 8761
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  metrics:
+      distribution:
+        percentiles-histogram:
+          http:
+            server:
+              requests: true
+  context-path: /actuator
